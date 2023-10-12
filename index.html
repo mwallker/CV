@@ -1,439 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
 
-  <link href="./style.css" rel="stylesheet" />
-  <style>
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./Montserrat-Black.ttf") format("truetype");
-      font-weight: 900;
-    }
+    <link href="./style.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./Montserrat-Black.ttf") format("truetype");
+        font-weight: 900;
+      }
 
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./Montserrat-ExtraLight.ttf") format("truetype");
-      font-weight: 200;
-    }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./Montserrat-ExtraLight.ttf") format("truetype");
+        font-weight: 200;
+      }
 
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./Montserrat-Light.ttf") format("truetype");
-      font-weight: 300;
-    }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./Montserrat-Light.ttf") format("truetype");
+        font-weight: 300;
+      }
 
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./Montserrat-Regular.ttf") format("truetype");
-      font-weight: 400;
-    }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./Montserrat-Regular.ttf") format("truetype");
+        font-weight: 400;
+      }
 
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./Montserrat-Medium.ttf") format("truetype");
-      font-weight: 500;
-    }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./Montserrat-Medium.ttf") format("truetype");
+        font-weight: 500;
+      }
 
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./Montserrat-SemiBold.ttf") format("truetype");
-      font-weight: 600;
-    }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("./Montserrat-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+      }
 
-    html, body {
-      height: 100%;
-      font-family: "Montserrat";
-      font-size: 14px;
-    }
+      html,
+      body {
+        height: 100%;
+        font-family: "Montserrat";
+        font-size: 14px;
+      }
 
-    .container {
-      padding: 1cm;
-      width: 210mm;
-      margin: 0 auto;
-    }
+      .container {
+        padding: 1cm;
+        width: 210mm;
+        margin: 0 auto;
+      }
 
-    .gray {
-      color: #5c5c5c;
-    }
+      header {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
 
-    header {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
+      main {
+        display: flex;
+        flex-direction: column;
+      }
 
-    aside {
-      border-right: 2px solid #e5e5e5;
-      display: flex;
-      flex-direction: column;
-      width: 30%;
-      padding-right: 30px;
-    }
+      h1,
+      h2,
+      h3,
+      h4,
+      h4,
+      h6 {
+        margin: 0;
+        position: relative;
+        font-weight: 600;
+      }
 
-    article {
-      display: flex;
-      flex-direction: column;
-      width: 70%;
-      padding: 0 35px;
-    }
+      h3 {
+        margin: 10px 0;
+      }
 
-    main {
-      display: flex;
-      flex-direction: row;
-    }
+      p {
+        margin: 5px 0;
+      }
 
-    h1, h2, h3, h4, h5, h6 {
-      margin: 4px 0;
-      position: relative;
-      font-weight: 600;
-    }
+      .upper-case {
+        text-transform: uppercase;
+      }
 
-    h1 {
-      font-size: 3rem;
-    }
+      .space-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-    h2 {
-      font-size: 2.5rem;
-    }
+      a {
+        margin: 5px 0;
+        color: black;
+      }
 
-    h3 {
-      font-size: 2rem;
-    }
+      ul {
+        padding-inline-start: 20px;
+        margin-block-start: 0em;
+      }
 
-    h4 {
-      font-size: 1.563rem;
-      width: 50px;
-      border-bottom: 3px black solid;
-      padding-bottom: 10px;
-      white-space: nowrap;
-    }
+      .communication-links {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="upper-case">Uladzimir Milanovich</h1>
+        <h3>Senior Software Engineer | Game Developer</h3>
 
-    h5 {
-      font-size: 1.25rem;
-    }
+        <p>Poland, Warsaw</p>
+        <p>
+          <a href="tel:+48452712851" class="communication-links"
+            >+48 452712851</a
+          >
+          •
+          <a
+            href="mailto:vladimir.milanovich@gmail.com"
+            class="communication-links"
+            >vladimir.milanovich@gmail.com</a
+          >
+          •
+          <a href="https://www.linkedin.com/in/vladimir-milanovich-b4216a164/"
+            >Linkedin</a
+          >
+        </p>
+      </header>
 
-    h6 {
-      font-size: 0.938rem;
-    }
-
-    p {
-      margin: 5px 0;
-    }
-
-    .image {
-      position: absolute;
-      right: 0;
-      border-radius: 50%;
-    }
-
-    .underline,
-    .underline-sidebar {
-      margin-bottom: 30px;
-      margin-top: 30px;
-    }
-
-    .upper-case {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .space-between {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    a {
-      margin: 5px 0;
-      color: black;
-    }
-
-    .column {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .small {
-      font-size: 0.813rem;
-    }
-
-    .mb-1 {
-      margin-bottom: 8px
-    }
-    .mb-2 {
-      margin-bottom: 16px
-    }
-    .mb-3 {
-      margin-bottom: 24px
-    }
-
-    .mt-1 {
-      margin-top: 8px
-    }
-    .mt-2 {
-      margin-top: 16px
-    }
-    .mt-3 {
-      margin-top: 24px
-    }
-
-    b {
-      font-weight: 600;
-    }
-
-    hr {
-      width: 100%;
-      border-color: #e5e5e5;
-    }
-
-    .border-bottom {
-      padding-bottom: 16px;
-      border-bottom: 2px solid #e5e5e5;
-    }
-
-    .progress {
-      position: relative;
-      margin-bottom: 24px;
-    }
-    .progress::before {
-      position: absolute;
-      content: '';
-      height: 3px;
-      bottom: -10px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      background: black;
-      opacity: 0.2;
-    }
-    .progress::after {
-      position: absolute;
-      content: '';
-      height: 3px;
-      bottom: -10px;
-      left: 0;
-      right: 0;
-      width: 0%;
-      background: black;
-    }
-
-    .w-100::after {
-      width: 100%;
-    }
-    .w-90::after {
-      width: 90%;
-    }
-    .w-80::after {
-      width: 80%;
-    }
-    .w-70::after {
-      width: 70%;
-    }
-    .w-60::after {
-      width: 60%;
-    }
-    .w-50::after {
-      width: 50%;
-    }
-    .w-40::after {
-      width: 40%;
-    }
-    .w-30::after {
-      width: 30%;
-    }
-    .w-20::after {
-      width: 20%;
-    }
-    .w-10::after {
-      width: 10%;
-    }
-    .communication-links{
-      text-decoration: none;
-    }
-    .subtitle {
-      font-size: 1rem;
-    }
-    .gray li {
-      padding-top: 2px;
-      padding-bottom: 2px;
-    }
-    .upper-case-details {
-      letter-spacing: 0;
-    }
-    .tag{
-      padding: 5px 10px;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      display: inline-block;
-      border: 1px solid #5c5c5c;
-      border-radius: 25px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1 class="upper-case">Uladzimir Milanovich</h1>
-      <p class="gray mb-2 subtitle">Senior Software Engineer | Game Developer</p>
-    </header>
-
-    <main>
-      <aside>
+      <main>
         <div>
-          <h4 class="underline underline-sidebar upper-case">Contacts</h4>
-          <div class="mb-1">
-            <h6 class="upper-case upper-case-details">Location</h6>
-            <p class="gray">Poland, Warsaw</p>
-          </div>
-          <div class="mb-1">
-            <h6 class="upper-case upper-case-details">Email</h6>
-            <p class="gray"><a href="mailto:vladimir.milanovich@gmail.com" class="gray communication-links">vladimir.milanovich@gmail.com</a></p>
-          </div>
-          <div class="mb-1">
-            <h6 class="upper-case upper-case-details">Phone</h6>
-            <p class="gray"><a href="tel:+48452712851" class="gray communication-links">+48 452712851</a></p>
-          </div>
-        </div>
-        
-        <div>
-          <h4 class="underline underline-sidebar upper-case">Skills</h4>
-          <h6 class="mt-1 mb-1">Programming Languages:</h6>
-          <p>
-            <span class="tag">Javascript</span>
-            <span class="tag">Typescript</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">C#</span>
-          </p>
-
-          <h6 class="mt-1 mb-1">Frameworks/Libraries:</h6>
-          <p>
-            <span class="tag">React</span>
-            <span class="tag">Redux</span>
-            <span class="tag">React Native</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Next.js</span>
-            <span class="tag">Svelte</span>
-          </p>
-
-          <h6 class="mt-1 mb-1">Graphics:</h6>
-          <p>
-            <span class="tag">Babylon.js</span>
-            <span class="tag">Three.js</span>
-            <span class="tag">Pixi.js</span>
-            <span class="tag">Unity</span>
-          </p>
-
-          <h6 class="mt-1 mb-1">Testing:</h6>
-          <p>
-            <span class="tag">Jest</span>
-          </p>
-
-          <h6 class="mt-1 mb-1">VSC:</h6>
-          <p>
-            <span class="tag">Git</span>
-          </p>
-
-          <h6 class="mt-1 mb-1">Other:</h6>
-          <p>
-            <span class="tag">Webpack</span>
-            <span class="tag">Rollup.js</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Jenkins</span>
-            <span class="tag">Gitlab</span>
-            <span class="tag">Auth0</span>
-          </p>
-        </div>
-
-        <div>
-          <h4 class="underline underline-sidebar upper-case">Languages</h4>
-          <div>
-            <p class="mb-1">English - Upper Intermediate </p>
-          </div>
-          <div>
-            <p class="mb-1">Russian - Native</p>
-          </div>
-          <div>
-            <p class="mb-1">Polish - Beginner</p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="underline underline-sidebar upper-case">Links</h4>
-          <div class="column">
-            <a href="https://www.linkedin.com/in/vladimir-milanovich-b4216a164/" class="mb-1">Linkedin</a>
-          </div>
-        </div>
-      </aside>
-
-      <article>
-        <div class="border-bottom">
-          <h4 class="underline underline-sidebar upper-case">Profile</h4>
-          <p class="gray mb-1">
-            Software developer with <b>9+ years</b> of experience building web and mobile applications and games. Proficient with <b>Typescript</b> and <b>React</b>. Worked following Agile methodologies, such as Scrum & Kanban.
-          </p>
-          <p class="gray">
-            Deeply interested in game development. Have years of both commercial and non-commercial experience with <b>Three.js</b>, <b>Babylon.js</b>, <b>Pixi.js</b> and <b>Unity</b>. Passionate about new challenges and keen on difficult tasks.
-          </p>
-        </div>
-
-        <div class="border-bottom">
-          <h4 class="underline underline-sidebar upper-case">Employment history</h4>
-
-          <div class="space-between">
-            <h6>Game Developer at Evolution</h6>
-            <span>Warsaw</span>
-          </div>
-          <div class="small">October 2022 - Present Day</div>
-          <p class="gray mt-2">Worked on several outsource projects:</p>
-          <ul class="gray">
-            <li>building game mechanics for slot games using <b>Pixi.js</b></li>
-            <li>implementing tools for enchaining development process, like validating and previewing art assets on a game engine</li>
-          </ul>
-
-          <div class="space-between">
-            <h6>Senior Software Engineer at Exadel</h6>
-            <span>Minsk</span>
-          </div>
-          <div class="small">July 2018 - September 2022</div>
-          <p class="gray mt-2">Participated in several projects as an outsource developer. During this period I was:</p>
-          <ul class="gray">
-            <li>building mobile application using <b>React Native</b> (for both <b>iOS</b> and <b>Android</b>), with possibility to dynamically change content via external CMS. Made several UI and performance optimizations</li>
-            <li>designed and integrated authentication and authorization platform (<b>Auth0</b>) into several applications, which helped to combine users from different identity providers</li>
-            <li>developing several web application, being responsible for writing business logic both for UI (<b>React</b> and <b>Redux</b>) and backend middlewares (<b>Node.js</b>). Made a <b>Koa.js</b> router's extension (which is Node's framework) to define endpoints in more declarative way by building solution based on top of <b>Typescript</b> decorators</li>
-            <li>keeping application quality on high level by doing code reviews, performing refactoring and covering functionality with appropriate amount of unit tests (<b>Jest</b>)</li>
-            <li>building application publishing pipeline with <b>Github Actions</b></li>
-            <li>managed development team as <b>Technical Leader</b></li>
-            <li><b>interviewing</b> external candidates</li>
-            <li><b>mentoring</b> newcomers</li>
-          </ul>
-
-          <div class="space-between">
-            <h6>Software Engineer at Exadel</h6>
-            <span>Minsk</span>
-          </div>
-          <div class="small">August 2014 - May 2017</div>
-          <p class="gray mt-2">Worked on several outsource projects:</p>
-          <ul class="gray">
-            <li>building web applications (with earliest versions of <b>Angular.js</b>), providing both unit and e2e tests</li>
-            <li>implementing re-usable UI components to be used by other teams.</li>
+          <h3 class="upper-case">Summary</h3>
+          <ul>
+            <li>
+              Over 10 years of web, mobile and game development experience with
+              a focus on the frontend aspect.
+            </li>
+            <li>
+              Actively participated in more than 15 long term projects,
+              including the creation of 5 projects from scratch, demonstrating
+              the ability to deliver results and adopt to customer's needs and
+              goal.
+            </li>
+            <li>
+              Actively pursues professional growth by reading technical
+              literature, attending conferences, trying out new technologies in
+              practice.
+            </li>
+            <li>
+              Have experience in mentorship, conducting technical interview and
+              leading development teams.
+            </li>
+            <li>
+              Taught practical web development course to Belorussian State
+              University's students.
+            </li>
+            <li>Have a higher technical education.</li>
+            <li>
+              Independently developed mobile game using Unity engine and
+              released to Google Play.
+            </li>
           </ul>
         </div>
 
-        <div class="border-bottom">
-          <h4 class="underline underline-sidebar upper-case">EDUCATION</h4>
-          <div class="space-between">
-            <h6>Bachelor, Belarussian State University</h6>
-            <span>Minsk</span>
-          </div>
-          <div class="small">2011 - 2016</div>
+        <h3 class="upper-case">Skills</h3>
+        <p>
+          <span>JavaScript</span> • <span>TypeScript</span> •
+          <span>HTML</span> • <span>CSS</span> • <span>C#</span> •
+          <span>Git</span> • <span>Unity</span> • <span>Pixi.js</span> •
+          <span>Babylon.js</span> • <span>Three.js</span> • <span>React</span> •
+          <span>Jest</span>
+        </p>
+
+        <h3 class="upper-case">PROFESSIONAL EXPERIENCE</h3>
+
+        <div class="space-between">
+          <h4>Evolution</h4>
+          <h4>October 2022 - Present Day</h4>
         </div>
-      </article>
-    </main>
-  </div>
-</body>
+        <div>
+          <h4>Game Developer</h4>
+          <span>Poland, Warsaw</span>
+        </div>
+        <p>
+          Evolution is a leading B2B solution provider for casino operators
+          offering live casino, live game shows, slots and more.
+        </p>
+        <ul>
+          <li>
+            Actively participated in development, certification and release of 3
+            slot games, where was implementing game mechanics and UI using
+            Typescript, Pixi.js and Three.js.
+          </li>
+          <li>
+            Build a tool to improve process of delivering graphical assets. It
+            was used to preview and validate exported Spine files before they
+            can be added to the games.
+          </li>
+        </ul>
+
+        <div class="space-between">
+          <h4>Exadel</h4>
+          <h4>August 2014 - October 2022</h4>
+        </div>
+        <div>
+          <h4>Senior Software Engineer</h4>
+          <span>Belarus, Minsk</span>
+        </div>
+        <p>
+          Exadel is a leading global software consulting and development company
+          with over to 2,800 employees. Their focus is to helps clients reinvent
+          the way they do business with end-to-end software consulting, design,
+          engineering, and managed services.
+        </p>
+        <ul>
+          <li>
+            Was developing mobile application in Sport & Fitness domain (for
+            both Android and iOS) using React Native. Successfully integrated
+            notification system (OneSignal) and Firebase Analytics. Build
+            several features that helped customer to attract more users. Made
+            optimizations to load application's content 10% faster.
+          </li>
+          <li>
+            Successfully completed 2 projects as a Technical Lead. Managed to
+            keep balance between administrative responsibilities (like providing
+            feedbacks, actively participating in Scrum procedures, conducting
+            meetings) and development related tasks (doing researches,
+            implementing features, reviewing code). Took an opportunity to work
+            with .NET server implementation.
+          </li>
+          <li>
+            Build role-based security layer for a set of applications to protect
+            both frontend and backend from unauthorized access. Designed
+            solution and integrated authentication and authorization platform
+            Auth0 into more then 4 customer's applications, which allows use of
+            different identity providers along with supporting previously added
+            permissions feature. Build deliver pipeline with Github Actions to
+            those systems.
+          </li>
+          <li>
+            Made a Koa.js router extension for Nodejs server endpoints to be
+            defined in more declarative way by building solution based on top of
+            Typescript decorators.
+          </li>
+          <li>
+            Developed over 6 web application using React, Redux and custom
+            components library, covering over 85% of its code base with unit
+            tests (Jest).
+          </li>
+          <li>
+            Interviewed 20+ candidates for several bootcamps, that were
+            organized by company. Participated in 2 of them as mentor.
+          </li>
+        </ul>
+
+        <h3 class="upper-case">EDUCATION</h3>
+        <div class="space-between">
+          <h4>Belarussian State University</h4>
+          <h4>2011 - 2016</h4>
+        </div>
+        <div>
+          <span>Bachelor's degree, Mathematics and Computer Science</span>
+        </div>
+
+        <h3 class="upper-case">Languages</h3>
+        <div>
+          <span>English (Upper Intermediate)</span> •
+          <span>Russian (Native)</span> •
+          <span>Polish (Beginner)</span>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
